@@ -179,8 +179,8 @@ input[type=submit]:hover { opacity: 0.88; }
             <label for="role">Rol:</label>
             <select id="role" name="role">
                 <option value="">-- Selecciona un rol --</option>
-                <option value="student" {{ old('role') == 'student' ? 'selected' : '' }}>Estudiante</option>
-                <option value="teacher" {{ old('role') == 'teacher' ? 'selected' : '' }}>Profesor</option>
+                <option value="alumno" {{ old('role') == 'alumno' ? 'selected' : '' }}>Estudiante</option>
+                <option value="profesor" {{ old('role') == 'profesor' ? 'selected' : '' }}>Profesor</option>
             </select>
             @error('role') <span class="error">{{ $message }}</span> @enderror
 

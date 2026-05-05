@@ -37,7 +37,7 @@ class User extends Authenticatable
     // --- Verifica si el usuario es profesor ---
     public function esProfesor(): bool
     {
-        return $this->role === 'teacher';
+        return $this->role === 'profesor';
     }
 
     // --- Verifica si la cuenta está bloqueada ---

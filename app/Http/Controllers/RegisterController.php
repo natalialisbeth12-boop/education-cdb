@@ -23,7 +23,7 @@ class RegisterController extends Controller
             'name'     => 'required|string|max:100',
             'email'    => 'required|email|unique:users,email',
             'password' => 'required|string|min:6|confirmed',
-            'role'     => 'required|in:teacher,student',
+            'role'     => 'required|in:profesor,alumno',
         ], [
             'name.required'      => 'El nombre es obligatorio.',
             'name.max'           => 'El nombre no puede superar 100 caracteres.',
