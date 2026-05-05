@@ -14,6 +14,6 @@
         <tr><td>Rol:</td><td><span class="rol rol-profesor">Profesor</span></td></tr>
         <tr><td>Registrado:</td><td>{{ $usuario->created_at->format('d/m/Y') }}</td></tr>
     </table>
-    <a href="{{ route('users.index') }}">Administrar Usuarios</a>
+    <a href="{{ route('users.index') }}" class="btn-crear">Administrar Usuarios</a>
 </div>
 @endsection
